@@ -15,3 +15,14 @@ Experimental / prototype.
 Build and run:
 ```bash
 go run ./...
+```
+## Project layout
+- internal/domain — domain models
+- internal/repo — repository implementations (including in-memory)
+- internal/service — business logic / validation
+- cmd / other folders — TODO: add server/router if needed
+
+## Notes
+- In-memory store; data is ephemeral.
+- Intended for experimentation and learning; interfaces may change.
+- Defaults: Go 1.25.3; see go.mod for dependencies.
